@@ -82,7 +82,7 @@ void controlCallback(const sensor_msgs::Joy::ConstPtr& msg)
 
 void exterminate() {
 	execute = true;
-	std::string command("xterm -e mplayer -loop 2 ");
+	std::string command("xterm -e mplayer -loop 10 ");
 	command += file_name;
 	pid = system(command.c_str());
 }
