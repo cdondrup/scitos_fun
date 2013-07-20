@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="konami" type="konami" name="konami" output="screen">
+		<param name="exterminate" value="$(find konami)/data/exterminate.mp3" type="string"/>
+	</node>
+</launch>
